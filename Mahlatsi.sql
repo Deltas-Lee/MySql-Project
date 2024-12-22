@@ -1,6 +1,13 @@
-Sure! Here's an example of an SQL file that creates a database named "employees" with two tables: `departments` and `employees`. It also includes SQL statements to insert data into these tables.
+The following script does the following:
+1. Creates a database named `employees`.
+2. Switches to the `employees` database.
+3. Creates a `departments` table with columns for department ID and department name.
+4. Inserts sample data into the `departments` table.
+5. Creates an `employees` table with columns for employee ID, first name, last name, email, hire date, and department ID.
+6. Inserts sample data into the `employees` table.
+7. Verifies the inserted data with `SELECT` statements.
 
-```sql
+``` sql
 -- Create the employees database
 CREATE DATABASE IF NOT EXISTS employees;
 
@@ -44,13 +51,6 @@ SELECT * FROM departments;
 SELECT * FROM employees;
 ```
 
-This script does the following:
-1. Creates a database named `employees`.
-2. Switches to the `employees` database.
-3. Creates a `departments` table with columns for department ID and department name.
-4. Inserts sample data into the `departments` table.
-5. Creates an `employees` table with columns for employee ID, first name, last name, email, hire date, and department ID.
-6. Inserts sample data into the `employees` table.
-7. Verifies the inserted data with `SELECT` statements.
+
 
 You can save this content into a file with a `.sql` extension and execute it using your SQL database management tool.
